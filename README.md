@@ -11,7 +11,7 @@ Automobile::Truck.pm
 
 
 
-# Test code
+# Test our modules  
 
 t/test_animal.pl  
 
@@ -46,3 +46,10 @@ ok 10 - Automobile::Truck->can('get_owner')
 ok 11 - Automobile::Truck->can('get_color')  
 ok 12 - Automobile::Truck->can('get_sound')  
 1..12  
+
+# Static analysis  
+
+./static_check.sh  
+perltidy OK  
+
+

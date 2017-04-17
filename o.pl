@@ -11,7 +11,7 @@ sub animal_actions {
 	my $whiskers = new Animal::Cat("whiskers", "Scott"); 
 	say $whiskers->get_name();
 
-	$whiskers->setName("Whiskers");
+	$whiskers->set_name("Whiskers");
 
 	say $whiskers->get_name();
 	say $whiskers->get_sound(); 
