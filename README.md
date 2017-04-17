@@ -48,8 +48,4 @@ ok 12 - Automobile::Truck->can('get_sound')
 1..12  
 
 # Static analysis  
-
-./static_check.sh  
-perltidy OK  
-
-
+perltidy - no ERR files
