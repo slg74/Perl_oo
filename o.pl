@@ -50,7 +50,6 @@ sub automobile_actions {
 	{
 		my $t = new Automobile::Truck("RAM", "Scott", "Black", "RAGARAGARAGA");
 
-
 		say $t->getModel();
 		say $t->getColor(); 
 		say $t->getSound(); 
