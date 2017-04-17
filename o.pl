@@ -37,12 +37,12 @@ sub automobile_actions {
 		say $gt->getColor(); 
 		say $gt->getSound(); 
 
-		my $m = $gt->getModel(); 
-		my $c = $gt->getColor();
-		my $s = $gt->getSound(); 
-		my $o = $gt->getOwner(); 
+		my $model = $gt->getModel(); 
+		my $color = $gt->getColor();
+		my $sound = $gt->getSound(); 
+		my $owner = $gt->getOwner(); 
 
-		say "$m $c $s $o"; 
+		say "$model $color $sound $owner"; 
 
 		use Automobile::Truck;
 	}
@@ -54,12 +54,12 @@ sub automobile_actions {
 		say $t->getColor(); 
 		say $t->getSound(); 
 
-		my $m = $t->getModel(); 
-		my $c = $t->getColor();
-		my $s = $t->getSound(); 
-		my $o = $t->getOwner(); 
+		my $model = $t->getModel(); 
+		my $color = $t->getColor();
+		my $sound = $t->getSound(); 
+		my $owner = $t->getOwner(); 
 
-		say "$m $c $s $o"; 
+		say "$model $color $sound $owner"; 
 	}
 }
 
@@ -68,13 +68,18 @@ sub main {
 	my $count = 0; 
 	my $running = 1; 
 	while ($running) {
+
 		animal_actions();
 		automobile_actions();
+
 		if ($count == 10) {
 			$running = 0;
+			return 0;
 		}
+
 		print "\n"x2; 
 		sleep 1; 
+
 		$count++; 
 	}
 }
