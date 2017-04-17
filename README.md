@@ -15,6 +15,8 @@ Automobile::Truck.pm
 
 t/test_animal.pl  
 
+
+
 ok 1 - use Animal::Cat;  
 ok 2 - use Animal::Lion;  
 ok 3 - Animal::Cat->can('new')  
@@ -24,8 +26,9 @@ ok 6 - Animal::Cat->can('setName')
 ok 7 - Animal::Cat->can('getSound')  
 ok 8 - Animal::Lion->can('new')  
 ok 9 - Animal::Lion->can('getName')  
-ok 10 - Animal::Lion->can('getOwner')  
-ok 11 - Animal::Lion->can('getSound')  
-1..11  
+ok 10 - Animal::Lion->can('setName')  
+ok 11 - Animal::Lion->can('getOwner')  
+ok 12 - Animal::Lion->can('getSound')  
+1..12  
 
 
