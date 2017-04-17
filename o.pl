@@ -47,7 +47,6 @@ sub automobile_actions {
 		use Automobile::Truck;
 	}
 
-
 	{
 		my $t = new Automobile::Truck("RAM", "Scott", "Black", "RAGARAGARAGA");
 
