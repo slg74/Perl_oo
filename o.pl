@@ -26,10 +26,8 @@ sub animal_actions {
 	say $whiskers->getOwner(); 
 }
 
-animal_actions(); 
 
 sub automobile_actions {
-
 	{
 		use Automobile::Car;
 
@@ -67,4 +65,20 @@ sub automobile_actions {
 	}
 }
 
-automobile_actions(); 
+
+sub main {
+	my $count = 0; 
+	my $running = 1; 
+	while ($running) {
+		animal_actions();
+		automobile_actions();
+		if ($count == 10) {
+			$running = 0;
+		}
+		print "\n"x2; 
+		sleep 1; 
+		$count++; 
+	}
+}
+
+main(); 
