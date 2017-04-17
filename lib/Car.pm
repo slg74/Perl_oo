@@ -16,22 +16,22 @@ sub new {
 	return $self;
 }
 
-sub getModel {
+sub get_model {
 	my ($self) = @_;
 	return $self->{model};
 }
 
-sub getOwner {
+sub get_owner {
 	my ($self) = @_;
 	return $self->{owner};
 }
 
-sub getColor {
+sub get_color {
 	my ($self) = @_;
 	return $self->{color};
 }
 
-sub getSound {
+sub get_sound {
 	my ($self) = @_;
 	return $self->{sound};
 }

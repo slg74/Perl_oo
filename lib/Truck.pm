@@ -7,7 +7,7 @@ use warnings;
 
 our @ISA = qw(Automobile::Car);    # Automobile::Truck inherits from Automobile::Car
 
-sub getSound {
+sub get_sound {
 	my ($self) = @_;
 	return $self->{sound}; 
 }

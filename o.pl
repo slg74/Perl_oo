@@ -9,21 +9,21 @@ sub animal_actions {
 	use Animal::Cat;
 
 	my $whiskers = new Animal::Cat("whiskers", "Scott"); 
-	say $whiskers->getName();
+	say $whiskers->get_name();
 
 	$whiskers->setName("Whiskers");
 
-	say $whiskers->getName();
-	say $whiskers->getSound(); 
+	say $whiskers->get_name();
+	say $whiskers->get_sound(); 
 
 	use Animal::Lion;
 
 	my $king = new Animal::Lion("King", "No Owner"); 
 
-	say $king->getSound(); 
-	say $king->getOwner(); 
+	say $king->get_sound(); 
+	say $king->get_owner(); 
 
-	say $whiskers->getOwner(); 
+	say $whiskers->get_owner(); 
 }
 
 
@@ -33,14 +33,14 @@ sub automobile_actions {
 
 		my $gt = new Automobile::Car("GT40", "Scott", "Blue", "VRooM");
 
-		say $gt->getModel();
-		say $gt->getColor(); 
-		say $gt->getSound(); 
+		say $gt->get_model();
+		say $gt->get_color(); 
+		say $gt->get_sound(); 
 
-		my $model = $gt->getModel(); 
-		my $color = $gt->getColor();
-		my $sound = $gt->getSound(); 
-		my $owner = $gt->getOwner(); 
+		my $model = $gt->get_model(); 
+		my $color = $gt->get_color();
+		my $sound = $gt->get_sound(); 
+		my $owner = $gt->get_owner(); 
 
 		say "$model $color $sound $owner"; 
 
@@ -50,14 +50,14 @@ sub automobile_actions {
 	{
 		my $t = new Automobile::Truck("RAM", "Scott", "Black", "RAGARAGARAGA");
 
-		say $t->getModel();
-		say $t->getColor(); 
-		say $t->getSound(); 
+		say $t->get_model();
+		say $t->get_color(); 
+		say $t->get_sound(); 
 
-		my $model = $t->getModel(); 
-		my $color = $t->getColor();
-		my $sound = $t->getSound(); 
-		my $owner = $t->getOwner(); 
+		my $model = $t->get_model(); 
+		my $color = $t->get_color();
+		my $sound = $t->get_sound(); 
+		my $owner = $t->get_owner(); 
 
 		say "$model $color $sound $owner"; 
 	}

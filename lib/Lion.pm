@@ -7,7 +7,7 @@ use warnings;
 
 our @ISA = qw(Animal::Cat);
 
-sub getSound {
+sub get_sound {
 	my ($self) = @_;
 	return $self->{name}, " says RAWR!"; 
 }
