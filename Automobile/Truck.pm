@@ -5,7 +5,7 @@ use Automobile::Car;
 use strict;
 use warnings;
 
-our @ISA = qw(Automobile::Car);
+our @ISA = qw(Automobile::Car);    # Automobile::Truck inherits from Automobile::Car
 
 sub getSound {
 	my ($self) = @_;
