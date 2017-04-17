@@ -29,36 +29,42 @@ sub animal_actions {
 animal_actions(); 
 
 sub automobile_actions {
-	use Automobile::Car;
 
-	my $gt = new Automobile::Car("GT40", "Scott", "Blue", "VRooM");
+	{
+		use Automobile::Car;
 
-	say $gt->getModel();
-	say $gt->getColor(); 
-	say $gt->getSound(); 
+		my $gt = new Automobile::Car("GT40", "Scott", "Blue", "VRooM");
 
-	my $cm = $gt->getModel(); 
-	my $cc = $gt->getColor();
-	my $cs = $gt->getSound(); 
-	my $co = $gt->getOwner(); 
+		say $gt->getModel();
+		say $gt->getColor(); 
+		say $gt->getSound(); 
 
-	say "$cm $cc $cs $co"; 
+		my $m = $gt->getModel(); 
+		my $c = $gt->getColor();
+		my $s = $gt->getSound(); 
+		my $o = $gt->getOwner(); 
 
-	use Automobile::Truck;
+		say "$m $c $s $o"; 
 
-	my $t = new Automobile::Truck("RAM", "Scott", "Black", "RAGARAGARAGA");
+		use Automobile::Truck;
+	}
 
-	say $t->getModel();
-	say $t->getColor(); 
-	say $t->getSound(); 
 
-	my $m = $t->getModel(); 
-	my $c = $t->getColor();
-	my $s = $t->getSound(); 
-	my $o = $t->getOwner(); 
+	{
+		my $t = new Automobile::Truck("RAM", "Scott", "Black", "RAGARAGARAGA");
 
-	say "$m $c $s $o"; 
 
+		say $t->getModel();
+		say $t->getColor(); 
+		say $t->getSound(); 
+
+		my $m = $t->getModel(); 
+		my $c = $t->getColor();
+		my $s = $t->getSound(); 
+		my $o = $t->getOwner(); 
+
+		say "$m $c $s $o"; 
+	}
 }
 
 automobile_actions(); 
